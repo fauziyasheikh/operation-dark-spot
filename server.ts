@@ -17,7 +17,7 @@ import {
   AnalysisStats,
   QuoteVerification,
 } from './src/types';
-import { stripClaimIds, passesRule2, scoreClaimRelevance } from './src/utils/claimQuality';
+import { stripClaimIds, passesRule2, scoreClaimRelevance } from './src/utils/claimQuality.js';
 
 dotenv.config();
 
