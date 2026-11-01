@@ -4,8 +4,8 @@
 
 **Operation Dark Spot** is a forensic research and intelligence investigation web application disguised as a Shin-chan themed detective agency. It identifies critical information gaps, contradictory citations, outdated regulatory clauses, and unverified assumptions across multiple web sources before users make high-stakes decisions (e.g. scholarship submissions, visa applications, legal filings).
 
-Live demo: <ADD LINK>
-
+Live demo: [<ADD LINK>](https://drive.google.com/file/d/1UefwqoW8RWFIGtJeK3QJSkbC-M3jNfUl/view?usp=sharing)
+Project demo: [<ADD LINK>](https://operation-dark-spot.vercel.app/)
 ---
 
 ## The Problem It Solves
