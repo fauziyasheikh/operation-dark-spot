@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile for Operation Dark Spot Detective Agency",
+      "type": "object",
+      "properties": {
+        "displayName": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 30,
+          "description": "Detective name (2 to 30 characters)"
+        },
+        "avatar": {
+          "type": "string",
+          "enum": ["shinchan", "misae", "kazama", "masao", "shiro"],
+          "description": "Chosen detective avatar ID"
+        },
+        "xp": {
+          "type": "number",
+          "description": "Investigator XP score"
+        },
+        "badges": {
+          "type": "array",
+          "description": "Earned forensic badges"
+        },
+        "casesClosed": {
+          "type": "number",
+          "description": "Number of investigative cases closed"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the detective profile was registered"
+        }
+      },
+      "required": ["displayName", "avatar", "xp", "badges", "casesClosed"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/User"
+      },
+      "description": "Detective user profiles, restricted to the owning authenticated user"
+    }
+  }
+}

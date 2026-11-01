@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas-base: #FFFDF0;
+    --ink-black: #18181B;
+  }
+
+  body {
+    background-color: var(--canvas-base);
+    color: var(--ink-black);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Neo-Brutalist tactile effects */
+.brutal-border {
+  border: 3px solid #18181b;
+}
+
+.brutal-border-4 {
+  border: 4px solid #18181b;
+}
+
+.brutal-border-dashed {
+  border: 2px dashed #18181b;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #18181b;
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #18181b;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #18181b;
+}
+
+.brutal-shadow-xl {
+  box-shadow: 8px 8px 0px #18181b;
+}
+
+.brutal-shadow-accent {
+  box-shadow: 4px 4px 0px var(--avatar-ink, #18181b);
+}
+
+/* Tactile button pressed behavior */
+.brutal-btn {
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+}
+
+.brutal-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #18181b;
+}
+
+.brutal-btn:active:not(:disabled) {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px #18181b;
+}
+
+.brutal-btn:focus-visible {
+  outline: 3px solid #18181b;
+  outline-offset: 3px;
+}
+
+/* Caution tape ribbon */
+.caution-ribbon {
+  background: repeating-linear-gradient(
+    -45deg,
+    #facc15,
+    #facc15 14px,
+    #18181b 14px,
+    #18181b 28px
+  );
+}
+
+/* Subtle manila paper dot grid */
+.paper-pattern {
+  background-color: #fffdf0;
+  background-image: radial-gradient(#18181b 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Speech bubble pointer */
+.bubble-pointer-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 28px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #18181b;
+}
+
+.bubble-pointer-bottom::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ffffff;
+  z-index: 1;
+}
+
+/* Red Pin badge */
+.detective-pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 35%, #ff7b72, #b91c1c);
+  border: 2px solid #18181b;
+  box-shadow: 1.5px 1.5px 0px #18181b;
+}
