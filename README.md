@@ -1,11 +1,15 @@
 # Operation Dark Spot: Detective Agency 🕵️‍♂️🔍
 
-> **Important Note:** AI findings are potential signals, not guaranteed facts. Always verify requirements directly with the official source.
+> **Important:** AI findings are potential signals, not guaranteed facts. Always verify requirements directly with the official source.
 
-**Operation Dark Spot** is a forensic research and intelligence investigation web application disguised as a Shin-chan themed detective agency. It identifies critical information gaps, contradictory citations, outdated regulatory clauses, and unverified assumptions across multiple web sources before users make high-stakes decisions (e.g. scholarship submissions, visa applications, legal filings).
+**Operation Dark Spot** is a web app that reviews several sources about a topic and shows what is missing, conflicting or outdated before you decide. Every finding links to an exact quote that the server has checked against the source text. A Shinchan-inspired detective game makes verifying the checklist more engaging.
 
-Live demo: [<ADD LINK>](https://drive.google.com/file/d/1UefwqoW8RWFIGtJeK3QJSkbC-M3jNfUl/view?usp=sharing)
-Project demo: [<ADD LINK>](https://operation-dark-spot.vercel.app/)
+Built for the Shinchan Online Hackathon 2026 (problem: *Digital Dark Spot*).
+
+**Demo video:** [Watch the walkthrough](https://drive.google.com/file/d/1UefwqoW8RWFIGtJeK3QJSkbC-M3jNfUl/view?usp=sharing)
+
+**Live demo:** [operation-dark-spot.vercel.app](https://operation-dark-spot.vercel.app/) (use "Play as guest")
+
 ---
 
 ## The Problem It Solves
